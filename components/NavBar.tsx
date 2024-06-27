@@ -10,7 +10,7 @@ const NavBar = () => {
       <div className="mx-[80px] max-lg:mx-5">
         <div className="flex items-center justify-between py-5 text-white">
           <h1 className="font-main font-bold text-primary text-4xl max-sm:text-2xl">
-            Bond<span className="text-white">X</span>
+            Bond<span className="text-white text-5xl max-sm:text-3xl">X</span>
           </h1>
           <ul className="flex items-center justify-between gap-10 text-slate-300 max-lg:hidden bg-secondary px-10 py-3 rounded-md font-main">
             <li className="hover:text-primary">
@@ -20,10 +20,10 @@ const NavBar = () => {
               <a href="/token">Create Token</a>
             </li>
             <li className="hover:text-primary">
-              <a>Trade</a>
+              <a href="#">Trade</a>
             </li>
             <li className="hover:text-primary">
-              <a>Profile</a>
+              <a href="#">Profile</a>
             </li>
           </ul>
           <button className="border border-bcolor py-3 px-8 rounded-md max-sm:hidden font-main bg-secondary">
