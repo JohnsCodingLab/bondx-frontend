@@ -14,7 +14,7 @@ const CreateTokenForm = () => {
               type="text"
               placeholder="Token Name"
               required
-              className="w-[500px] max-sm:w-[350px] p-3 rounded-md text-white bg-secondary outline-none"
+              className="w-[500px] max-sm:w-[300px] p-3 rounded-md text-white bg-secondary outline-none"
             />
           </div>
 
@@ -24,7 +24,7 @@ const CreateTokenForm = () => {
               type="text"
               placeholder="Token Symbool"
               required
-              className="w-[500px] max-sm:w-[350px] p-3 rounded-md text-white bg-secondary outline-none"
+              className="w-[500px] max-sm:w-[300px] p-3 rounded-md text-white bg-secondary outline-none"
             />
           </div>
 
@@ -34,7 +34,7 @@ const CreateTokenForm = () => {
               type="text"
               placeholder="Initial Supply"
               required
-              className="w-[500px] max-sm:w-[350px] p-3 rounded-md text-white bg-secondary outline-none"
+              className="w-[500px] max-sm:w-[300px] p-3 rounded-md text-white bg-secondary outline-none"
             />
           </div>
           <button className="mt-4 mb-20 bg-primary rounded-md py-2 px-4">
