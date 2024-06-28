@@ -6,7 +6,7 @@ const CreateTokenForm = () => {
     <>
       <Main />
       <div className="text-white font-main mx-[80px] mt-40 ">
-        <h1 className="text-primary text-lg text-center">Create Torken</h1>
+        <h1 className="text-primary text-lg text-center">Create Token</h1>
         <div className="flex flex-col items-center">
           <div className="flex flex-col mb-5">
             <label className="mb-2">Name:</label>

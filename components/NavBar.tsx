@@ -51,10 +51,10 @@ const NavBar = () => {
               <a href="/token">Create Token</a>
             </li>
             <li className="hover:text-white mb-2 hover:bg-secondary p-3">
-              <a>Trade</a>
+              <a href="#">Trade</a>
             </li>
             <li className="hover:text-white mb-2 hover:bg-secondary p-3">
-              <a>Profile</a>
+              <a href="#">Profile</a>
             </li>
           </ul>
           <button className="py-2 px-8 border border-secondary md:hidden text-white rounded-sm font-main mt-5 hover:bg-secondary">

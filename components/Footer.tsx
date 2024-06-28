@@ -5,8 +5,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <>
-      <div className="mt-5 p-5">
-        <div className="border border-secondary w-full mb-10"></div>
+      <div className="mt-5 mb-10 p-5">
+        <div className="border border-secondary w-full mb-20"></div>
         <div className="flex justify-center text-white gap-10 mb-5 max-sm:flex-col max-sm:items-center max-sm:mb-10">
           <a>About</a>
           <a>Contact</a>
