@@ -15,6 +15,7 @@ const config: Config = {
         primary: "#005bf8",
         secondary: "#191919",
         bcolor: "#4a4a4a",
+        grey: "#929292",
       },
       keyframes: {
         slideIn: {
