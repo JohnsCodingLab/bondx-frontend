@@ -5,7 +5,7 @@ const CreateTokenForm = () => {
   return (
     <>
       <Main />
-      <div className="text-white font-main mx-[80px] mt-40 ">
+      <div className="text-white font-main mx-[80px] max-sm:mx-5 mt-40 ">
         <h1 className="text-primary text-lg text-center">Create Token</h1>
         <div className="flex flex-col items-center">
           <div className="flex flex-col mb-5">
