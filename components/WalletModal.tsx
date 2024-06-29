@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { ModalProps } from "@/types";
 import WalletComponents from "./WalletComponents";
@@ -18,7 +19,8 @@ const WalletModal = ({ isVisible, onClose }: ModalProps) => {
         </button>
         <div className="bg-bcolor rounded-lg p-3 gap-2 cursor-pointer flex items-center mt-10">
           <Image src="/base.png" alt="logo" width={20} height={20} />
-          <p>Coinbase</p>
+          <p><WalletComponents /></p>
+        
         </div>
 
         <div className="bg-bcolor rounded-lg p-3 gap-2 cursor-pointer flex items-center mt-5">
