@@ -23,7 +23,7 @@ const WalletModal = ({ isVisible, onClose }: ModalProps) => {
 
         <div className="bg-bcolor rounded-lg p-3 gap-2 cursor-pointer flex items-center mt-5">
           <Image src="/metamask.png" alt="logo" width={20} height={20} />
-          <p>Metamask</p>
+          <p>MetaMask</p>
         </div>
 
         <div className="bg-bcolor rounded-lg p-3 gap-2 cursor-pointer flex items-center mt-5">
