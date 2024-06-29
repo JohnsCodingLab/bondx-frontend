@@ -2,10 +2,14 @@
 import React, { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
 import WalletComponents from "./WalletComponents";
-
+import WalletModal from "./WalletModal";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const openModal = () => setIsModalVisible(true);
+  const closeModal = () => setIsModalVisible(false);
 
   return (
     <>
@@ -28,9 +32,13 @@ const NavBar = () => {
               <a href="#">Profile</a>
             </li>
           </ul>
-          <span className="border border-bcolor py-3 px-8 rounded-md max-sm:hidden font-main bg-secondary">
-          <WalletComponents />
-          </span>
+          <button
+            onClick={openModal}
+            className="border border-bcolor py-3 px-8 rounded-md max-sm:hidden font-main bg-secondary"
+          >
+            Connect Wallet
+          </button>
+          <WalletModal onClose={closeModal} isVisible={isModalVisible} />
           <IoMdMenu
             size={30}
             className="lg:hidden"
@@ -59,9 +67,13 @@ const NavBar = () => {
               <a href="#">Profile</a>
             </li>
           </ul>
-          <span className="py-2 px-8 border border-secondary md:hidden text-white rounded-sm font-main mt-5 hover:bg-secondary">
-          <WalletComponents />
-          </span>
+          <button
+            onClick={openModal}
+            className="py-2 px-8 border border-secondary md:hidden text-white rounded-sm font-main mt-5 hover:bg-secondary"
+          >
+            Connect Wallet
+          </button>
+          <WalletModal onClose={closeModal} isVisible={isModalVisible} />
         </div>
       </div>
     </>
