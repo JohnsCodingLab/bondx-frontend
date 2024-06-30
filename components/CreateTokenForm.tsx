@@ -29,14 +29,43 @@ const CreateTokenForm = () => {
           </div>
 
           <div className="flex flex-col mb-5">
-            <label className="mb-2">Initial Supply:</label>
-            <input
-              type="text"
-              placeholder="Initial Supply"
+            <label className="mb-2">Description</label>
+            <textarea
+              placeholder="Description"
+              rows={5}
               required
               className="w-[500px] max-sm:w-[300px] p-3 rounded-md text-white bg-secondary outline-none"
             />
           </div>
+
+          <div className="flex flex-col mb-5">
+            <label className="mb-2">Image</label>
+            <input
+              type="file"
+              placeholder="Image"
+              required
+              className="w-[500px] max-sm:w-[300px] p-3 rounded-md text-white bg-secondary outline-none"
+            />
+          </div>
+
+          <div className="flex flex-col mb-5">
+            <label className="mb-2">Telegram</label>
+            <input
+              type="text"
+              placeholder="Optional"
+              className="w-[500px] max-sm:w-[300px] p-3 rounded-md text-white bg-secondary outline-none"
+            />
+          </div>
+
+          <div className="flex flex-col mb-5">
+            <label className="mb-2">Twitter</label>
+            <input
+              type="text"
+              placeholder="Optional"
+              className="w-[500px] max-sm:w-[300px] p-3 rounded-md text-white bg-secondary outline-none"
+            />
+          </div>
+
           <button className="mt-4 mb-20 bg-primary rounded-md py-2 px-4">
             Create Token
           </button>

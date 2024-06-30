@@ -44,13 +44,13 @@ const Trade = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-4 mt-16 gap-5">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-16 gap-5">
           {currentItems.map((data: DataProp) => (
             <TradeCard key={data.name} data={data} />
           ))}
         </div>
 
-        <div className="mx-[100px] flex justify-between mt-10">
+        <div className="mx-[100px] max-sm:mx-5 flex justify-between mt-10">
           <button
             onClick={handlePrevPage}
             disabled={currentPage === 1}
