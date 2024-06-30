@@ -28,9 +28,3 @@ body {
   background-color: #000000;
   /* background-color: #111111; */
 }
-
-.cus__class input {
-  border-radius: 8px;
-  padding: 4px;
-  color: white;
-}
