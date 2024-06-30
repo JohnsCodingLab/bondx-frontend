@@ -26,10 +26,10 @@ const NavBar = () => {
               <a href="/token">Create Token</a>
             </li>
             <li className="hover:text-primary">
-              <a href="#">Trade</a>
+              <a href="/trade">Trade</a>
             </li>
             <li className="hover:text-primary">
-              <a href="#">Profile</a>
+              <a href="/shill">Shill</a>
             </li>
           </ul>
           <button
