@@ -9,11 +9,16 @@ const Trade = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const itemsPerPage = 12;
 
+  // Filter the data based on the search query
+  const filteredData = dummyData.filter((item) =>
+    item.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   // Calculate the total number of pages
-  const totalPages = Math.ceil(dummyData.length / itemsPerPage);
+  const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
   // Get the items for the current page
-  const currentItems = dummyData.slice(
+  const currentItems = filteredData.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
@@ -38,17 +43,27 @@ const Trade = () => {
             <input
               type="text"
               placeholder="Search"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
               className="w-[300px] bg-transparent outline-none text-white"
             />
             <Image src="/search.png" alt="search" width={20} height={20} />
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-16 gap-5">
-          {currentItems.map((data: DataProp) => (
-            <TradeCard key={data.name} data={data} />
-          ))}
-        </div>
+        {filteredData.length > 0 ? (
+          <>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-16 gap-5">
+              {currentItems.map((data: DataProp) => (
+                <TradeCard key={data.name} data={data} />
+              ))}
+            </div>
+          </>
+        ) : (
+          <h1 className="text-white text-2xl text-center my-20">
+            No Token Found
+          </h1>
+        )}
 
         <div className="mx-[100px] max-sm:mx-5 flex justify-between mt-10">
           <button

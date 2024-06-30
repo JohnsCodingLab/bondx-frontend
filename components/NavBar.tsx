@@ -18,7 +18,7 @@ const NavBar = () => {
           <h1 className="font-main font-bold text-primary text-4xl max-sm:text-2xl">
             Bond<span className="text-white text-5xl max-sm:text-3xl">X</span>
           </h1>
-          <ul className="flex items-center justify-between gap-10 text-slate-300 max-lg:hidden bg-secondary px-10 py-3 rounded-md font-main">
+          <ul className="flex items-center justify-between gap-5 text-slate-300 max-lg:hidden bg-secondary px-10 py-3 rounded-md font-main">
             <li className="hover:text-primary">
               <a href="/">Home</a>
             </li>
@@ -27,6 +27,9 @@ const NavBar = () => {
             </li>
             <li className="hover:text-primary">
               <a href="/trade">Trade</a>
+            </li>
+            <li className="hover:text-primary">
+              <a href="/swap">Swap</a>
             </li>
             <li className="hover:text-primary">
               <a href="/shill">Shill</a>
@@ -57,10 +60,13 @@ const NavBar = () => {
               <a href="/token">Create Token</a>
             </li>
             <li className="hover:text-white mb-2 hover:bg-secondary p-3">
-              <a href="#">Trade</a>
+              <a href="/trade">Trade</a>
             </li>
             <li className="hover:text-white mb-2 hover:bg-secondary p-3">
-              <a href="#">Profile</a>
+              <a href="/swap">Swap</a>
+            </li>
+            <li className="hover:text-white mb-2 hover:bg-secondary p-3">
+              <a href="/shill">Shill</a>
             </li>
           </ul>
           <button
