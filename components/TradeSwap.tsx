@@ -9,10 +9,7 @@ import {
   SwapMessage,
 } from "@coinbase/onchainkit/swap";
 import { useAccount, useSendTransaction } from "wagmi";
-import type {
-  BuildSwapTransaction,
-  SwapError,
-} from "@coinbase/onchainkit/swap";
+import type { BuildSwapTransaction } from "@coinbase/onchainkit/swap";
 import type { Token } from "@coinbase/onchainkit/token";
 const TradeSwap = () => {
   const { address } = useAccount();

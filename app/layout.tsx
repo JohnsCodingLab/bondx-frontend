@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
-import OnchainProviders from "./pages/OnchainProviders";
+import OnchainProviders from "../config/OnchainProviders";
 import NavBar from "@/components/NavBar";
 import { Wallet } from "@coinbase/onchainkit/wallet";
 
