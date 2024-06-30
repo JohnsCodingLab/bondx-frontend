@@ -8,6 +8,7 @@ const TradeCardDetails = () => {
         <div className={styles.buttons}>
           <button className={styles.buy_button}>Buy</button>
           <button className={styles.sell_button}>Sell</button>
+          <p></p>
         </div>
       </div>
       
