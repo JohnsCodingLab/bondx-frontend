@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
-import WalletComponents from "./WalletComponents";
 import WalletModal from "./WalletModal";
+import { WalletComponents } from "./WalletComponents";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,12 +32,8 @@ const NavBar = () => {
               <a href="/shill">Shill</a>
             </li>
           </ul>
-          <button
-            onClick={openModal}
-            className="border border-bcolor py-3 px-8 rounded-md max-sm:hidden font-main bg-secondary"
-          >
-            Connect Wallet
-          </button>
+          <WalletComponents />
+
           <WalletModal onClose={closeModal} isVisible={isModalVisible} />
           <IoMdMenu
             size={30}
