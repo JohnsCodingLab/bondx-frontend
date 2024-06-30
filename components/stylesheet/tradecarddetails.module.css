@@ -1,0 +1,31 @@
+.carddetails_container{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    min-height: 300px;
+    min-width: 380px;
+    background: rgb(46 48 58 );;
+    color: rgb(156 163 175 );
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buy_button{
+    padding: 0.5rem 4rem;
+    background: rgb(74 222 128 );
+    color: rgb(27 29 40 );
+    /* margin: 0 0.5rem; */
+}
+.sell_button{
+    /* margin: 0 0.5rem; */
+    padding: 0.5rem 4rem;
+    background: rgb(31 41 55 );
+    color: rgb(156 163 175 );
+}
