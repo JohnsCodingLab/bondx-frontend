@@ -1,4 +1,3 @@
-
 "use client";
 import { useCallback } from "react";
 import { ConnectAccount } from "@coinbase/onchainkit/wallet";
@@ -15,6 +14,7 @@ import type {
   SwapError,
 } from "@coinbase/onchainkit/swap";
 import type { Token } from "@coinbase/onchainkit/token";
+import Trade from "@/components/Trade";
 
 const page = () => {
   const { address } = useAccount();
@@ -82,7 +82,7 @@ const page = () => {
         <ConnectAccount />
       )}
       ;
-
+      <Trade />
     </>
   );
 };
