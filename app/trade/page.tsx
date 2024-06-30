@@ -1,3 +1,4 @@
+
 "use client";
 import { useCallback } from "react";
 import { ConnectAccount } from "@coinbase/onchainkit/wallet";
@@ -81,6 +82,7 @@ const page = () => {
         <ConnectAccount />
       )}
       ;
+
     </>
   );
 };

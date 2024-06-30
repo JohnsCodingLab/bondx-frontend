@@ -29,7 +29,7 @@ const NavBar = () => {
               <a href="/trade">Trade</a>
             </li>
             <li className="hover:text-primary">
-              <a href="#">Profile</a>
+              <a href="/shill">Shill</a>
             </li>
           </ul>
           <WalletComponents />
