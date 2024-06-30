@@ -61,7 +61,7 @@ const Trade = () => {
           </>
         ) : (
           <h1 className="text-white text-2xl text-center my-20">
-            No Token Found
+            No Tokens Found
           </h1>
         )}
 
