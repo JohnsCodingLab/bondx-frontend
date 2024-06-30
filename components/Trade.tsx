@@ -44,7 +44,7 @@ const Trade = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-4 mt-16 gap-5">
+        <div className="grid lg:grid-cols-4 mt-16 gap-5">
           {currentItems.map((data: DataProp) => (
             <TradeCard key={data.name} data={data} />
           ))}
