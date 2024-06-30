@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import OnchainProviders from "./pages/OnchainProviders";
 import NavBar from "@/components/NavBar";
+import { Wallet } from "@coinbase/onchainkit/wallet";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,12 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <OnchainProviders>
-        <NavBar />
-          {children}
-        </OnchainProviders>
-        <Footer />
+      <body className={`${inter.className} `}>
+        <div className="h-screen flex flex-col justify-between">
+          <OnchainProviders>{children}</OnchainProviders>
+          <Footer />
+        </div>
       </body>
     </html>
   );
