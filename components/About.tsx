@@ -9,14 +9,7 @@ const About = () => {
           How it Works
         </h1>
         <p className="text-center max-sm:text-justify leading-7">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-          qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-          quia non numquam eius
+          The process begins with deploying the MyTokenRouter contract, which serves as the initial deployment mechanism. The router's deployToken function creates an instance of the MyToken contract, taking the initial owner, Uniswap V2 router address, token name, and ticker as parameters. Inside the MyToken contract, the Uniswap V2 router is set, and a liquidity pair with WETH is created through the Uniswap V2 factory. An initial supply of tokens is minted to the specified owner. This setup facilitates seamless integration with Uniswap for liquidity provision and allows the token owner to mint additional tokens as needed.
         </p>
         <Image
           src="/coin4.png"
