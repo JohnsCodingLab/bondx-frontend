@@ -20,6 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          href="/logo.png"
+          type="image/png"
+          sizes="<generated>"
+        />
+      </head>
       <body className={`${inter.className} `}>
         <div className="h-screen flex flex-col justify-between">
           <OnchainProviders>{children}</OnchainProviders>
