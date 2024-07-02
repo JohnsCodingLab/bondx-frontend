@@ -1,7 +1,13 @@
 import TradeSwap from "@/components/TradeSwap";
 
 const page = () => {
-  return <></>;
+  return (
+    <>
+      <div>
+        <TradeSwap />
+      </div>
+    </>
+  );
 };
 
 export default page;
