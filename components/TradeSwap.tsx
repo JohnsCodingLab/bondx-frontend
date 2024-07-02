@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { useCallback } from "react";
 import { ConnectAccount } from "@coinbase/onchainkit/wallet";
@@ -74,7 +75,11 @@ const TradeSwap = () => {
           </Swap>
         </div>
       ) : (
-        <ConnectAccount />
+        <>
+          <div className="mx-auto w-[30%]">
+            <ConnectAccount />
+          </div>
+        </>
       )}
     </div>
   );

@@ -1,11 +1,23 @@
+"use client";
 import React from "react";
+import { useAccount } from "wagmi";
 
 const CreateTokenForm = () => {
+  const { address } = useAccount();
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    if (address) {
+      alert("form submited");
+    } else {
+      alert("Connect Wallet");
+    }
+  };
+
   return (
     <>
       <div className="text-white font-main mx-[80px] max-sm:mx-5 mt-40">
         <h1 className="text-primary text-lg text-center">Create Token</h1>
-        <form className="flex flex-col items-center">
+        <form className="flex flex-col items-center" onSubmit={handleSubmit}>
           <div className="flex flex-col mb-5">
             <label className="mb-2">Name:</label>
             <input
